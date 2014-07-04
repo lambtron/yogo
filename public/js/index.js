@@ -12,22 +12,29 @@
         yo_name: $('#yo-name-input').val()
       };
 
-      $.get('/retrieveyogos', load, function (data) {
-        console.log(data);
-      });
+      if (lat && lng) {
+        $.get('/retrieveyogos', load, function (data) {
+          console.log(data);
+        });
+      } else {
+        alert('Make sure your geolocation is turned on.');
+      }
     });
 
     $('#message-input-button').on('click', function () {
-      //
       var load = {
         lat: lat,
         lng: lng,
         message: $('#message-input').val()
       };
 
-      $.post('/leaveyogos', load, function (data) {
-        console.log(data);
-      });
+      if (lat && lng) {
+        $.post('/leaveyogos', load, function (data) {
+          console.log(data);
+        });
+      } else {
+        alert('Make sure your geolocation is turned on.');
+      }
     });
   });
 
