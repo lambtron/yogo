@@ -11,3 +11,22 @@ body {
 #map-canvas {
   height: 100%
 }
+
+#left-half{
+  color: #F2E394;
+  background-color: #588C7E;
+  width: 50%;
+  height: 100%;
+  left:0px;
+  position: absolute;
+  text-align: center;
+}
+#right-half{
+  color: #588C7E;
+  background-color: #F2E394;
+  width: 50%;
+  height: 100%;
+  right:0px;
+  position: absolute;
+  text-align: center;
+}

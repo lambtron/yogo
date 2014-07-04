@@ -2,33 +2,12 @@
 <html>
 <head>
   <title>YOGO - Yo On The Go</title>
-  
+
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.0/css/foundation.min.css">
+  <link rel="stylesheet" href="/public/css/index.css">
 
-  <style>
-    body {
-      margin:0px;
-    }
-    #left-half{
-      color: #F2E394;
-      background-color: #588C7E;
-      width: 50%;
-      height: 100%;
-      left:0px;
-      position: absolute;
-      text-align: center;
-    }
-    #right-half{
-      color: #588C7E;
-      background-color: #F2E394;
-      width: 50%;
-      height: 100%;
-      right:0px;
-      position: absolute;
-      text-align: center;
-    }
-  </style>
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="/public/js/index.js"></script>
 </head>
 
 <!-- SET THE CONTROLLER AND GET ALL TODOS WITH INITIALIZE FUNCTION -->
@@ -36,17 +15,13 @@
   <div class="row">
     <div id="left-half" class="small-6 columns">
       <p>RETRIEVE YOGO</p>
-      <form action="">
-      <input type="text" name="fname"><br>
-      <input type="submit" value="Submit">
-</form>
+      <input id="yo-name-input" type="text"><br>
+      <button id="yo-name-input-button">Submit</button>
     </div>
-
     <div id="right-half" class="small-6 columns">
       <p>SEND YOGO</p>
-      <form action="">
-      <input type="text" name="fname"><br>
-      <input type="submit" value="Submit">
+      <input id="message-input" type="text"><br>
+      <input id="message-input-button" type="submit" value="Submit">
     </div>
   </div>
 </body>
