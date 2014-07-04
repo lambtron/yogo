@@ -52,7 +52,7 @@
         if (err)
           res.send(err, 400);
         else
-          res.send("Success", 200);
+          res.send('Success', 200);
       });
     });
 
