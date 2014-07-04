@@ -19,7 +19,7 @@
       var load = req.query;
       Go.create.find({ loc:
         {'$near' : [ parseInt(load.lng), parseInt(load.lat) ],
-        $maxDistance : 500/111.2 }
+        $maxDistance : 5/111.2 }
       }, function (err, data) {
         if (err)
           res.send(err, 400);

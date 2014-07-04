@@ -12,20 +12,9 @@
         yo_name: $('#yo-name-input').val()
       };
 
-      console.log(load);
-
       $.get('/retrieveyogos', load, function (data) {
         console.log(data);
       });
-
-      // $.ajax({
-      //   dataType: 'json',
-      //   url: '/retrieveyogos',
-      //   data: load,
-      //   success: function (data) {
-      //     console.log(data);
-      //   }
-      // });
     });
 
     $('#message-input-button').on('click', function () {
