@@ -1,0 +1,3 @@
+TODO:
+- make sure lat and lng is sent from client to server
+- make sure that the server side retrieves correct nearby Goes
