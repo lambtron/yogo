@@ -6,7 +6,7 @@
    * Import helpers ============================================================
    */
   var Yo = require('../app/helpers/yo');
-  var Go = require('../app/models/users');
+  var Go = require('../app/models/go');
 
   // Static variables.
   var RADIUS = 1;
