@@ -1,10 +1,10 @@
 'use strict';
 
 (function() {
-  $(document).ready( function () {
-    var lat
-      , lng;
+  var lat
+    , lng;
 
+  $(document).ready( function () {
     $('#yo-name-input-button').on('click', function (event) {
       var load = {
         lat: lat,
@@ -51,5 +51,5 @@
     }
   }
 
-  getLocation;
+  getLocation();
 }());
