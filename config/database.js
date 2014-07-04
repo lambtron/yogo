@@ -2,13 +2,13 @@
 
 (function() {
 
-// Server.js is going to retrieve database.url.
-var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL ||
-  'mongodb://localhost/yogo';
+  // Server.js is going to retrieve database.url.
+  var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL ||
+    'mongodb://localhost/yogo';
 
-module.exports = {
-	// The database url to connect.
-	url: mongoUri
-}
+  module.exports = {
+  	// The database url to connect.
+  	url: mongoUri
+  }
 
 }());

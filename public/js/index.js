@@ -2,8 +2,6 @@
 
 (function() {
 	// Page specific JS here.
-  var infowindow = null;
-
   function initialize(position) {
     var mapOptions = {
       center: new google.maps.LatLng(position.coords.latitude,
@@ -13,15 +11,16 @@
     var map = new google.maps.Map(document.getElementById("map-canvas"),
       mapOptions);
 
+    console.log(map);
     // Add your location.
-    var you = new google.maps.Marker({
-      position: new google.maps.LatLng(position.coords.latitude,
-        position.coords.longitude),
-      map: map,
-      title: 'You',
-      animation: google.maps.Animation.DROP,
-      icon: '/public/img/currentlocation.png'
-    });
+    // var you = new google.maps.Marker({
+    //   position: new google.maps.LatLng(position.coords.latitude,
+    //     position.coords.longitude),
+    //   map: map,
+    //   title: 'You',
+    //   animation: google.maps.Animation.DROP
+    //   // icon: '/public/img/currentlocation.png'
+    // });
   }
 
   function getLocation() {
