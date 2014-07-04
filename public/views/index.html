@@ -1,28 +1,53 @@
-<!-- index.html -->
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
-	<!-- META -->
-	<meta charset="utf-8">
+  <title>YOGO - Yo On The Go</title>
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.0/css/foundation.min.css">
 
-	<title>yogo</title>
-
-	<!-- FAVICON -->
-	<!-- <link rel="shortcut icon" href="/public/img/favicon.png"> -->
-
-	<!-- SCROLLS -->
-	<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="/public/css/index.css">
-	<!-- load bootstrap -->
-
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmWsJqsr-EPu9PnUxT7PzlMIKdktjNZVA"></script>
-	<script type="text/javascript" src="/public/js/index.js"></script>
+  <style>
+    body {
+      margin:0px;
+    }
+    #left-half{
+      color: #F2E394;
+      background-color: #588C7E;
+      width: 50%;
+      height: 100%;
+      left:0px;
+      position: absolute;
+      text-align: center;
+    }
+    #right-half{
+      color: #588C7E;
+      background-color: #F2E394;
+      width: 50%;
+      height: 100%;
+      right:0px;
+      position: absolute;
+      text-align: center;
+    }
+  </style>
 
 </head>
 
 <!-- SET THE CONTROLLER AND GET ALL TODOS WITH INITIALIZE FUNCTION -->
 <body>
-	<div id="map-canvas"></div>
+  <div class="row">
+    <div id="left-half" class="small-6 columns">
+      <p>RETRIEVE YOGO</p>
+      <form action="">
+      <input type="text" name="fname"><br>
+      <input type="submit" value="Submit">
+</form>
+    </div>
+
+    <div id="right-half" class="small-6 columns">
+      <p>SEND YOGO</p>
+      <form action="">
+      <input type="text" name="fname"><br>
+      <input type="submit" value="Submit">
+    </div>
+  </div>
 </body>
 </html>
