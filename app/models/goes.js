@@ -9,9 +9,10 @@
   var GoSchema = new Schema({
       id: ObjectId,
       message: String,
-      lat: Number,
-      lng: Number
+      loc: []
   });
+
+  GoSchema.index({ loc: '2d' });
 
   var Go = mongoose.model("Go", GoSchema);
 

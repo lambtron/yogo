@@ -12,22 +12,28 @@
         yo_name: $('#yo-name-input').val()
       };
 
-      $.ajax({
-        dataType: 'json',
-        url: '/retrieveyogos',
-        data: load,
-        success: function (data) {
-          console.log(data);
-        }
+      console.log(load);
+
+      $.get('/retrieveyogos', load, function (data) {
+        console.log(data);
       });
+
+      // $.ajax({
+      //   dataType: 'json',
+      //   url: '/retrieveyogos',
+      //   data: load,
+      //   success: function (data) {
+      //     console.log(data);
+      //   }
+      // });
     });
 
     $('#message-input-button').on('click', function () {
       //
       var load = {
-        message: $('#message-input').val(),
         lat: lat,
-        lng: lng
+        lng: lng,
+        message: $('#message-input').val()
       };
 
       $.post('/leaveyogos', load, function (data) {
